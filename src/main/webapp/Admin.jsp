@@ -7,18 +7,29 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Notice</title>
+<title>Notices</title>
+
+
 <link rel="stylesheet" href="Views/bootstrap.css">
+<link rel="stylesheet" href="css/Notices.css">
+
 <script src="Components/jquery-3.6.0.min.js"></script>
 <script src="Components/Admin.js"></script>
 </head>
-<body><div class="container"><div class="row"><div class="col-6">
-	<h1> Payment: </h1>
+<body>
+
+<div class="bg-light">
+     <div class="container">
+     <div class="row">
+     <div class="col-12">
+	
+     <center><h1 style="font-size:380%;">Notice</h1></center>
+	
 <br>
   
   <div>
   
-			  		<form id="formItem" name="formItem" method="post" action="Admin.jsp">
+			  <form id="formItem" name="formItem" method="post" action="Admin.jsp">
 			 Notice Content: 
 			<input id="ncontent" name="ncontent" type="text" 
 			 class="form-control form-control-sm">
@@ -36,7 +47,7 @@
   		<div id="alertSuccess" class="alert alert-success"></div>
 				<div id="alertError" class="alert alert-danger"></div>
 				<br>
-				<div id="divItemsGrid">
+				<div class="table table-Stiped" id="divItemsGrid">
 				 <%
 				 Admin noticeobj = new Admin(); 
 				 out.print(noticeobj.viewNotices()); 
@@ -46,6 +57,7 @@
   </div>
   </div>
   </div>
- </div> 
+  </div></div>
+ 
 </body>
 </html>
